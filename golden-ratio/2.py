@@ -4,7 +4,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 
-def golden_selection(f, a, b, eps=1e-3) -> float:
+def golden_selection(f, a, b, eps=1e-3):
     k = 0
     q = (3 - sqrt(5)) / 2
 
