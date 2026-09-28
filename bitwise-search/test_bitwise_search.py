@@ -1,6 +1,6 @@
 import pytest
 
-from tri import bitwise_search
+from third import bitwise_search
 
 
 def test_minimum_at_left_boundary():
