@@ -1,14 +1,14 @@
 from math import sqrt
 
 
-def bit_by_bit_search(f, a, b, eps=1e-3):
+def bitwise_search(f, a, b, eps=1e-3):
     x = a
     h = (b - a) / 4
 
     fx = f(x)
     k = 1
 
-    while True:
+    while h > eps:
         x_next = x + h
 
         if x_next < a or x_next > b:
@@ -37,4 +37,4 @@ def target_func(x: float) -> float:
     return (x - 5) / sqrt(x**2 + 2)
 
 
-print(bit_by_bit_search(target_func, -10, 10))
+print(bitwise_search(target_func, -10, 10))
